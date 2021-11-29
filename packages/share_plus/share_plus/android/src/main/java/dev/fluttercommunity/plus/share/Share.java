@@ -59,7 +59,7 @@ class Share {
     shareIntent.putExtra(Intent.EXTRA_TEXT, text);
     shareIntent.putExtra(Intent.EXTRA_SUBJECT, subject);
     shareIntent.setType("text/plain");
-    Intent chooserIntent = Intent.createChooser(shareIntent, null /* dialog title optional */);
+    Intent chooserIntent = Intent.createChooser(shareIntent, "分享" /* dialog title optional */);
     startActivity(chooserIntent);
   }
 
