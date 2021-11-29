@@ -89,7 +89,7 @@ class Share {
     if (text != null) shareIntent.putExtra(Intent.EXTRA_TEXT, text);
     if (subject != null) shareIntent.putExtra(Intent.EXTRA_SUBJECT, subject);
     shareIntent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
-    Intent chooserIntent = Intent.createChooser(shareIntent, null /* dialog title optional */);
+    Intent chooserIntent = Intent.createChooser(shareIntent, "分享" /* dialog title optional */);
 
     List<ResolveInfo> resInfoList =
         getContext()
